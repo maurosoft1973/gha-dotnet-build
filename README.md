@@ -7,7 +7,7 @@ Uses the .NET CLI `dotnet build` [command](https://learn.microsoft.com/en-us/dot
 To use this action in your GitHub repository, you can follow these steps:
 
 ```yaml
-uses: maurosoft1973/dotnet-build@v1
+uses: maurosoft1973/gha-dotnet-build@v1
 ```
 
 ### Inputs
@@ -42,14 +42,14 @@ This action has no outputs.
 
 ```yaml
 - name: Build for Release
-  uses: maurosoft1973/dotnet-build@v1
+  uses: maurosoft1973/gha-dotnet-build@v1
 ```
 
 ### Build specified project with configuration Release
 
 ```yaml
 - name: Build for Release
-  uses: maurosoft1973/dotnet-build@v1
+  uses: maurosoft1973/gha-dotnet-build@v1
   with:
     projects: 'src/ProjectExample/*.csproj'
 ```
@@ -58,7 +58,7 @@ This action has no outputs.
 
 ```yaml
 - name: Build for Debug
-  uses: maurosoft1973/dotnet-build@v1
+  uses: maurosoft1973/gha-dotnet-build@v1
   with:
     configuration: Debug
     uploadBuildArtifact: false
@@ -68,7 +68,7 @@ This action has no outputs.
 
 ```yaml
 - name: Build
-  uses: maurosoft1973/dotnet-build@v1
+  uses: maurosoft1973/gha-dotnet-build@v1
   with:
     configuration: Debug
     restoreCacheKey: dotnet-restore-sha256
